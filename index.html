@@ -90,12 +90,81 @@
 
         }
         /* ^Estilos da barra de pesquisa^ */
+
+        /*Main*/
+        .content-boxes{
+
+        }
+        .up-boxes{
+            display: flex;
+            gap: 2.5rem;
+        }
+        .sos-chat-box{
+            background-color: #fffefe;
+            width: 530px;
+            height: 130px;
+            align-items: center;
+            border-radius: 30px;
+            padding: 15px;
+            margin-left: 30px;
+        }
+        .sos-chat-box h1{
+            font-weight: 15;
+            margin-bottom: 10px;
+        }
+        .sos-chat-box h1, p{
+            margin-left: 15px;
+        }
+
+        .emergency-boxes{
+            align-items: center;
+        }
+        .call-box{
+            background-color: #fffefe;
+            width: 300px;
+            height: 50px;
+            margin-bottom: 60px;
+            margin-left: 20px;
+            border-radius: 30px;
+            align-items: center;
+            text-align: center;
+        }
+        .box-content{
+            background-color: #fffefe;
+            width: 220px;
+            height: 160px;
+            margin-left: 20px;
+            border-radius: 30px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        /*Main*/
+
+
+
+        /*Media Queries || responsividade*/ 
+            @media(max-width: 800px){
+            .up-boxes{
+            display: flex;
+            gap: 2.5rem;
+            flex-direction: column;
+            }
+
+            .sos-chat-box{
+            background-color: #fffefe;
+            width: 330px;
+            height: 130px;
+            }
+            }
+         /*Media Queries*/
+
     </style>
 <!--^ Estilos da Home ^-->
 
 </head>
 <body>
-    <header class="header"> 
+    <header class="header"> <!--Header-->
         <div class="menu-button">
             <img src="assets/menu-button.png" alt="menu-button">
         </div>
@@ -123,10 +192,36 @@
             </svg>
         </div>
         
-    </header>
+    </header> <!--Fim Header-->
 
-    <main>
-        <h2 style="padding: 20px;"><i>Conheça nosso site!</i></h2>
-    </main>
+    <main> <!--Conteudo principal-->
+        <h2 style="padding: 30px;"><i>Conheça nosso site!</i></h2>
+
+        <div class="content-boxes">
+            <div class="up-boxes">
+                <div class="sos-chat-box">
+                    <h1><i>SOS CHAT 1.1</i></h1>
+                    <p>O SOS Chat é uma inteligência artificial <br> usada para fornecer ajuda mais rapido e <br> compreensível sobre sua saúde baseado <br> nos seus dados fornecidos</p>
+                </div>
+
+                <div class="emergency-boxes">
+                    <div class="call-box">
+                        <h2>SAMU 192</h2>
+                        <p>Só ligue em caso de emergência!</p>
+                    </div>  
+
+                    <div class="call-box">
+                        <h2>Bombeiros 193</h2>
+                        <p>Só ligue em caso de emergência!</p>
+                    </div>
+                </div>
+
+                <div class="box-content"> <!--Sem conteudo ainda--> 
+                    <h3>No Content</h3>
+                </div>
+            </div>
+        </div>
+
+    </main> <!--Fim Conteudo Principal-->
 </body>
 </html>
