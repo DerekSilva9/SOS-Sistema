@@ -57,12 +57,11 @@ body{
 
 .collapsed-side-bar {
     height: 100%;
-    width: 400px;
+    width: 0px;
     position: fixed;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: start;
+    align-content: start;
     gap: 30px;
     text-align: center;
     z-index: 0;
@@ -70,13 +69,7 @@ body{
     left: 0;
     background-color: rgb(63, 63, 63);
     overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.close-btn {
-    align-self: flex-start;
-    font-size: 1.9em;
-    
+    transition: 0.25s;
 }
 
 .collapsed-side-bar a {
@@ -84,12 +77,28 @@ body{
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
-    color: rgb(65, 65, 65);
-    background-color: rgb(235, 235, 235);
+    color: rgb(219, 219, 219);
     border-radius: 15px;
     width: 75%;
     align-self: center;
+    transition-duration: .25s;
 }
+
+.collapsed-side-bar a:hover {
+    color: gray;
+    transition-duration: .55s;
+}
+
+.close-btn {
+    align-self: flex-start;
+    font-size: 1.9em;
+    padding: 5px;
+}
+
+@media screen and (max-height: 450px) {
+    .collapsed-side-bar a {font-size: 1.3em;}
+}
+
 
 /*^ Collapsed-side-bar styles ^ */
 
@@ -130,7 +139,10 @@ body{
 
 /*Main: abaixo*/
 .content-boxes{
-
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
 }
 .up-boxes{
     display: flex;
@@ -176,8 +188,64 @@ body{
     justify-content: center;
 }
 
+.down-boxes{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 3%;
+}
+.remedy-box{
+    background-color: #fffefe;
+    width: 420px;
+    height: 80px;
+    padding: 30px;
+    border-radius: 30px;
+}
+.remedy-box h2{
+    font-weight: 10;
+    margin-bottom: 10px;
+}
+.remedy-box h4{
+    font-weight: 10;
+    margin-bottom: 10px;
+    color: grey;
+    font-size: 20px;
+}
+.remedy-box li{
+    list-style-type: disc;
+}
+.clinic-box{
+    background-color: #fffefe;
+    width: 300px;
+    height: 80px;
+    padding: 30px;
+    border-radius: 30px;
+}
+.clinic-box h2{
+    font-weight: 10;
+    margin-bottom: 10px;
+}
+.about-box{
+    background-color: #fffefe;
+    width: 300px;
+    height: 80px;
+    padding: 30px;
+    border-radius: 30px;
+}
+.about-box h2{
+    font-weight: 10;
+    margin-bottom: 10px;
+}
+
+
+
 /*Main*/
 
+
+.main-content {
+    transition-duration: .25s;
+    padding: 16px;
+}
 
 
 /*Media Queries || responsividade: abaixo*/ 
@@ -192,6 +260,21 @@ body{
     background-color: #fffefe;
     width: 330px;
     height: 130px;
+    }
+    .down-boxes{
+        display: flex;
+        gap: 2.5rem;
+        flex-direction: column;
+    }
+    .remedy-box{
+        background-color: #fffefe;
+        width: 330px;
+        height: 130px;
+    }
+    .clinic-box{
+        background-color: #fffefe;
+        width: 330px;
+        height: 130px;
     }
     }
  /*Media Queries*/
