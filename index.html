@@ -65,12 +65,11 @@
 
         .collapsed-side-bar {
             height: 100%;
-            width: 400px;
+            width: 0px;
             position: fixed;
             display: flex;
             flex-direction: column;
-            align-content: center;
-            justify-content: start;
+            align-content: start;
             gap: 30px;
             text-align: center;
             z-index: 0;
@@ -78,13 +77,7 @@
             left: 0;
             background-color: rgb(63, 63, 63);
             overflow-x: hidden;
-            transition: 0.5s;
-        }
-
-        .close-btn {
-            align-self: flex-start;
-            font-size: 1.9em;
-            
+            transition: 0.25s;
         }
         
         .collapsed-side-bar a {
@@ -92,12 +85,28 @@
             text-decoration: none;
             font-weight: bold;
             padding: 10px;
-            color: rgb(65, 65, 65);
-            background-color: rgb(235, 235, 235);
+            color: rgb(219, 219, 219);
             border-radius: 15px;
             width: 75%;
             align-self: center;
+            transition-duration: .25s;
         }
+
+        .collapsed-side-bar a:hover {
+            color: gray;
+            transition-duration: .55s;
+        }
+
+        .close-btn {
+            align-self: flex-start;
+            font-size: 1.9em;
+            padding: 5px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .collapsed-side-bar a {font-size: 1.3em;}
+        }
+        
 
         /*^ Collapsed-side-bar styles ^ */
 
@@ -185,7 +194,10 @@
         }
 
         /*Main*/
-
+        .main-content {
+            transition-duration: .25s;
+            padding: 16px;
+        }
 
 
         /*Media Queries || responsividade: abaixo*/ 
@@ -211,7 +223,7 @@
 <body>
     <header class="header"> <!--Header-->
         <div class="menu-button">
-            <button>
+            <button onclick="openNav()">
                 <img src="assets/menu-button.png" alt="menu-button">
             </button>
         </div>
@@ -219,9 +231,9 @@
         <div class="collapsed-side-bar"> <!-- Side bar div-->
             <!--Botões laterais-->
             <div class="close-btn"> <!--Div do botão de fechar-->
-                <a href="javascript:void(0)">&times;</a>
+                <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
             </div>
-            <a href="#">Sobre</a>
+            <a href="#">Sobre</a> <!--Botões de place holder-->
             <a href="#">Serviços</a>
             <a href="#">Contatos</a>
         </div>
@@ -251,7 +263,7 @@
         
     </header> <!--Fim Header-->
 
-    <main> <!--Conteudo principal-->
+    <main class="main-content"> <!--Conteudo principal-->
         <h2 style="padding: 30px;"><i>Conheça nosso site!</i></h2>
 
         <div class="content-boxes">
