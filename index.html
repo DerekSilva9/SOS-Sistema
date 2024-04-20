@@ -29,6 +29,12 @@
             width: 50px;
         }
 
+        .menu-button button {
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+        }
+
         .title-header{
             font-weight: 10;
             margin: auto;
@@ -55,7 +61,42 @@
             margin: 5px;
             
         }
-    
+        
+        .collapsed-side-bar {
+            height: 100%;
+            width: 400px;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: start;
+            gap: 30px;
+            text-align: center;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            background-color: rgb(63, 63, 63);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .close-btn {
+            align-self: flex-start;
+            font-size: 1.9em;
+            
+        }
+        
+        .collapsed-side-bar a {
+            font-size: 2em;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            color: rgb(65, 65, 65);
+            background-color: rgb(235, 235, 235);
+            border-radius: 15px;
+            width: 75%;
+            align-self: center;
+        }
 
 /*^Estilo do header^*/
 
@@ -166,10 +207,19 @@
 <body>
     <header class="header"> <!--Header-->
         <div class="menu-button">
-            <img src="assets/menu-button.png" alt="menu-button">
-            <div class="background">
-                
+            <button>
+                <img src="assets/menu-button.png" alt="menu-button">
+            </button>
+        </div>
+
+        <div class="collapsed-side-bar"> <!-- Side bar div-->
+            <!--Botões laterais-->
+            <div class="close-btn"> <!--Div do botão de fechar-->
+                <a href="javascript:void(0)">&times;</a>
             </div>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contatos</a>
         </div>
 
             <h2 class="title-header"> <!--Titulo do header-->
