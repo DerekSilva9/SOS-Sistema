@@ -53,6 +53,9 @@ body{
     margin: 5px;
     
 }
+.sos-header{
+    display: none;
+}
 /*Collapsed-side-bar styles: abaixo */
 
 .collapsed-side-bar {
@@ -254,6 +257,18 @@ body{
     display: flex;
     gap: 2.5rem;
     flex-direction: column;
+    align-items: center;
+    }
+    .title-header {
+        display: none; /* faz o título desaparecer */
+    }
+    
+    .sos-header {
+        display: flex; /* Exibe apenas "SOS" */
+        margin-left: auto; /* Coloca "SOS" no lado direito */
+        align-items: center; /* Alinha "SOS" verticalmente ao centro */
+        margin-left: 20px;
+        font-size: 20px;
     }
 
     .sos-chat-box{
@@ -265,6 +280,7 @@ body{
         display: flex;
         gap: 2.5rem;
         flex-direction: column;
+        align-items: center;
     }
     .remedy-box{
         background-color: #fffefe;
@@ -276,5 +292,6 @@ body{
         width: 330px;
         height: 130px;
     }
+    
     }
  /*Media Queries*/
