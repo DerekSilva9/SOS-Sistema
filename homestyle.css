@@ -267,7 +267,7 @@ body{
         display: flex; /* Exibe apenas "SOS" */
         margin-left: auto; /* Coloca "SOS" no lado direito */
         align-items: center; /* Alinha "SOS" verticalmente ao centro */
-        margin-left: 20px;
+        margin-left: 10px;
         font-size: 20px;
     }
 
