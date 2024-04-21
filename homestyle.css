@@ -180,7 +180,20 @@ body{
     border-radius: 30px;
     align-items: center;
     text-align: center;
+    transition: .5s;
 }
+.call-box:hover{
+    text-decoration: none;
+    color: black;
+    transform: translateY(-3px);
+    transition: 0.5s;
+}
+.emergency-button{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
 .box-content{
     background-color: #fffefe;
     width: 220px;
