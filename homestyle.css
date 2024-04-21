@@ -55,7 +55,12 @@ a{
     border-radius: 25px;
     background-color: white;
     margin: 5px;
-    
+    transition: all 0.3s ease;
+}
+.social-icons img:hover{ /* deixa a imagem do insta, email e notificação responsiva */
+    width: 30px;
+    padding: 7px;
+
 }
 .sos-header{
     display: none;
