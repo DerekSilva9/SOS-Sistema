@@ -119,4 +119,10 @@ header{
         justify-content: center;
     }
 
+    .unity-list-box img{
+        width: 90px;
+        height: 70px;
+        margin-bottom: 60px;
+    }
+
 }
