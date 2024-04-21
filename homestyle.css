@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 body{
     background-color: #ededed;
+}
+a{
+    color: black;
 }
 /*Estilo do header*/
 .header{
@@ -70,7 +74,7 @@ body{
     z-index: 0;
     top: 0;
     left: 0;
-    background-color: rgb(63, 63, 63);
+    background-color: #9b9b9b;
     overflow-x: hidden;
     transition: 0.25s;
 }
@@ -80,7 +84,7 @@ body{
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
-    color: rgb(219, 219, 219);
+    color: #f8f8f9;
     border-radius: 15px;
     width: 75%;
     align-self: center;
@@ -159,6 +163,18 @@ body{
     border-radius: 30px;
     padding: 15px;
     margin-left: 30px;
+    transition: 0.5s;
+}
+.sos-chat-box:hover{
+    background-color: #fffefe;
+    width: 530px;
+    height: 130px;
+    align-items: center;
+    border-radius: 30px;
+    padding: 15px;
+    margin-left: 30px;
+    transition: 0.5s;
+    transform: translateY(-5px);
 }
 .sos-chat-box h1{
     font-weight: 15;
@@ -216,6 +232,16 @@ body{
     height: 80px;
     padding: 30px;
     border-radius: 30px;
+    transition: 0.5s;
+}
+.remedy-box:hover{
+    background-color: #fffefe;
+    width: 420px;
+    height: 80px;
+    padding: 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+    transform: translateY(-5px);
 }
 .remedy-box h2{
     font-weight: 10;
@@ -236,6 +262,16 @@ body{
     height: 80px;
     padding: 30px;
     border-radius: 30px;
+    transition: 0.5s;
+}
+.clinic-box:hover{
+    background-color: #fffefe;
+    width: 300px;
+    height: 80px;
+    padding: 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+    transform: translateY(-5px);
 }
 .clinic-box h2{
     font-weight: 10;
@@ -247,6 +283,16 @@ body{
     height: 80px;
     padding: 30px;
     border-radius: 30px;
+    transition: 0.5s;
+}
+.about-box:hover{
+    background-color: #fffefe;
+    width: 300px;
+    height: 80px;
+    padding: 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+    transform: translateY(-5px);
 }
 .about-box h2{
     font-weight: 10;
@@ -283,11 +329,19 @@ body{
         margin-left: 10px;
         font-size: 20px;
     }
-
     .sos-chat-box{
     background-color: #fffefe;
     width: 330px;
     height: 130px;
+    transition: 0.5s;
+    }
+    .sos-chat-box:hover{
+        background-color: #fffefe;
+        width: 330px;
+        height: 130px;
+        transition: 0.5s;
+        transform: translateY(-5px);
+        transition: 0.5s;
     }
     .down-boxes{
         display: flex;
@@ -299,12 +353,34 @@ body{
         background-color: #fffefe;
         width: 330px;
         height: 130px;
+        transition: 0.5s;
+    }
+    .remedy-box:hover{
+        background-color: #fffefe;
+        width: 330px;
+        height: 130px;
+        transition: 0.5s;
+        transform: translateY(-5px);
     }
     .clinic-box{
         background-color: #fffefe;
         width: 330px;
         height: 130px;
+        transition: 0.5s;
     }
-    
+    .clinic-box:hover{
+        background-color: #fffefe;
+        width: 330px;
+        height: 130px;
+        transition: 0.5s;
+        transform: translateY(-5px);
+    }
+    .about-box{
+        transition: 0.5s;
+    }
+    .about-box:hover{
+        transform: translateY(-5px);
+        transition: 0.5s;
+    }
     }
  /*Media Queries*/
