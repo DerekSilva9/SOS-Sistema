@@ -47,6 +47,7 @@ input{
     background-color: black ;
     color: white;
     cursor: pointer;
+    transition: 0.5s;
 }
 .log button:hover{
 background-color: white;

@@ -1,3 +1,7 @@
+<?php 
+include('protect.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -22,6 +26,7 @@
             <a href="#">Sobre</a> <!--Botões de place holder-->
             <a href="#">Serviços</a>
             <a href="#">Contatos</a>
+            <a href="logout.php">Logout</a>
         </div>
 
             <h2 class="title-header"> <!--Titulo do header-->
@@ -58,7 +63,7 @@
     </header> <!--Fim Header-->
 
     <main class="main-content"> <!--Conteudo principal-->
-        <h2 style="padding: 30px;"><i>Conheça nosso site!</i></h2>
+        <h2 style="padding: 30px;"><i>Conheça nosso site, <?php echo $_SESSION['nome']; ?>!</i></h2>
 
         <div class="content-boxes">
 
