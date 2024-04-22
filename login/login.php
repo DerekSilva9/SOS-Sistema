@@ -43,6 +43,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="cadastre.html">
     <link rel="stylesheet" href="index.php">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <title>Login</title>
 </head> <!--Tela de login, quando a pessoa vai entrar no site-->
 <body>

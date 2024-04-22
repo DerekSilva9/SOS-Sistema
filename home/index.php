@@ -9,6 +9,7 @@ include('../protect.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOS-Home</title>
     <link rel="stylesheet" href="style/homestyle.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header"> <!--Header-->
@@ -19,13 +20,15 @@ include('../protect.php');
         </div>
 
         <div class="collapsed-side-bar"> <!-- Side bar div-->
-            <!--Botões laterais-->
-            <div class="close-btn"> <!--Div do botão de fechar-->
+             <!--Botões laterais-->
+             <div class="close-btn"> <!--Div do botão de fechar-->
                 <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
             </div>
-            <a href="#">Sobre</a> <!--Botões de place holder-->
-            <a href="#">Serviços</a>
-            <a href="#">Contatos</a>
+            <span class="personal-area">Área pessoal</span>
+            <a href="#"><em>Configurações</em></a> <!--Botões de place holder-->
+            <a href="#"><em>Conta</em></a>
+            <a href="#"><em>Contato</em></a>
+            <a href="#"><em>Sobre</em></a>
             <a href="../login/logout.php">Logout</a>
         </div>
 
