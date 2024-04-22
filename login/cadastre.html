@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/cadastre.css">
+    <title>Criar nova Conta</title>
+</head> <!--Tela de cadastro, para quem não tem conta-->
+<body>
+    <div class="geral">
+        <div class="cad">
+            <a href="login.php" class="seta">
+                <button class="seta"><img src="../img/imagem_2024-04-20_205638068-removebg-preview.png" alt="seta para sair"></button>
+            </a>
+            <div class="cada">
+                <h1 class="cade">Cadastre-se</h1>
+            </div>
+        </div>
+         <div class="input">
+            <br>
+            <div class="inp">
+                                <h3>Nome:</h3>
+                                <input type="text" placeholder="Nome" required>                 
+                                <h3>Sobrenome:</h3>
+                                <input type="text" placeholder="Sobrenome" required>
+                                <h3>Data de Nascimento:</h3>
+                                <input type="date" placeholder="Data de Nascimento" required>
+                                <h3>Gmail:</h3>
+                                <input type="email" placeholder="Gmail">
+                                <h3>Senha:</h3>
+                                <input type="password" placeholder="Senha">
+                                <h3>Confirmar Senha:</h3>
+                                <input type="password" placeholder="Confirmar Senha">
+                                <h3>CPF:</h3>
+                                <input type="number" id="cpf" placeholder="CPF" maxlength="11" title="Digite um CPF válido (apenas números)" required>
+                                <h3>RG:</h3>
+                                <input type="number" id="rg" placeholder="RG" maxlength="9" title="Digite um RG válido (apenas números)" required>
+                               <h3>Possui alergia à algum remédio?</h3>
+                                <input type="text" placeholder="Possui alergia à algum remédio?" required>
+                                <h3>Possui comorbidade?</h3>
+                                    <button class="si">Sim</button> 
+                                    <button class="no">Não</button>
+        <br><br><br>
+        <a href="login.php"><button class="submit">Cadastrar</button></a>
+    </div>
+    </div>
+    </div>
+
+</body>
+</html>

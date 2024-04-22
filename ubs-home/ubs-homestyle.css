@@ -1,0 +1,128 @@
+*{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+}
+body{
+    background-color: #ededed;
+}
+header{
+    background-color: #a6a6a6;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #f6fafb;
+}
+.title-header{
+    font-weight: 10;
+    margin: auto;
+    align-items: center;
+    display: flex;
+}
+
+/* Estilos da barra de pesquisa: abaixo */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    justify-content: center;
+    position: relative;
+}
+
+.search-bar input {
+    padding-right: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffffff;
+    color: #333;
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    fill: #616161;
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+/* ^Estilos da barra de pesquisa^ */
+
+.unity-list-box{
+    margin: auto;
+    text-align: center;
+    margin-bottom: -80px;
+}
+
+.unity-list-box img{
+    width: 90px;
+    height: 70px;
+}
+.unity-list-box h4{
+    margin: auto;
+    font-weight: 10;
+    font-size: 20px;
+    text-align: center
+}
+
+/*UBS LOCALS: ABAIXO*/
+
+.local-boxes{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+}
+.ubs{
+    border-radius: 35px;
+    border: black;
+    border-style: solid;
+    padding: 30px;
+    width: 300px;
+}
+.up-local-boxes{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.down-local-boxes{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+@media(max-width: 800px){
+    .up-local-boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    .down-local-boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .ubs{
+        width: 200px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .unity-list-box img{
+        width: 90px;
+        height: 70px;
+        margin-bottom: 60px;
+    }
+
+}
