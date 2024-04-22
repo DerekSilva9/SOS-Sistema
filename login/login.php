@@ -40,7 +40,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="cadastre.html">
     <link rel="stylesheet" href="index.php">
     <title>Login</title>

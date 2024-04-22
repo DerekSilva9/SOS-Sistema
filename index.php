@@ -8,13 +8,13 @@ include('protect.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOS-Home</title>
-    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="style/homestyle.css">
 </head>
 <body>
     <header class="header"> <!--Header-->
         <div class="menu-button">
             <button onclick="openNav()">
-                <img src="assets/menu-button.png" alt="menu-button">
+                <img src="../assets/menu-button.png" alt="menu-button">
             </button>
         </div>
 
@@ -26,13 +26,13 @@ include('protect.php');
             <a href="#">Sobre</a> <!--Botões de place holder-->
             <a href="#">Serviços</a>
             <a href="#">Contatos</a>
-            <a href="logout.php">Logout</a>
+            <a href="../login/logout.php">Logout</a>
         </div>
 
             <h2 class="title-header"> <!--Titulo do header-->
                 SOS - Sistema Online De Saúde
                 <div class="hearth-logo"> <!--Coração-Logo-->
-                    <img src="assets/hearth-icon.png" alt="hearth-logo">
+                    <img src="../assets/hearth-icon.png" alt="hearth-logo">
                 </div>
             </h2>
 
@@ -41,11 +41,11 @@ include('protect.php');
             <div class="social-icons"> <!--Icones das redes sociais/notificação-->
                 <ul class="list-icons">
                     <a href="https://www.instagram.com/tecnico_informatica0/" class="bota" target="_blank"> <!--Redireciona a pessoa para o insta da sala-->
-                        <img src="img/instagram-logo.png" alt="Instagram"></a>
+                        <img src="../assets/instagram-logo.png" alt="Instagram"></a>
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tecnicoinformaticaad2023@gmail.com" class="botao" target="_blank"><!--Redireciona a pessoa para o email da sala-->
-                            <img src="img/imagem.gmail-removebg-preview.png" alt="Gmail">
+                            <img src="../img/imagem.gmail-removebg-preview.png" alt="Gmail">
                         </a>
-                        <li><img src="img/notificacao-logo.png"></li>
+                        <li><img src="../img/notificacao-logo.png"></li>
                 </ul>
             </div>
             <li class="sos-header">SOS</li>
@@ -102,7 +102,7 @@ include('protect.php');
                 </div>
 
                 <div class="clinic-box">
-                    <a href="ubs-home.html">
+                    <a href="../ubs-home/ubs-home.html">
                         <h2><i>Consultório mais próximo</i></h2>
                         <p>Localize o atendimento médico <br> mais próximo</p>
                     </a>
@@ -119,6 +119,6 @@ include('protect.php');
 
 
     </main> <!--Fim Conteudo Principal-->
-    <script src="script/script.js"></script>
+    <script src="../script/script.js"></script>
 </body>
 </html>
