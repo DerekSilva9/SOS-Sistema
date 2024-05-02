@@ -2,20 +2,20 @@
 include('../conexao.php');
 
 if(isset($_POST['email']) || isset($_POST['senha'])) {
-    if(strlen($_POST['email']) == 0) { // Se a quantidade de caracteres do email for igual a 0, vai pedir que preencha o email
+    if(strlen($_POST['email']) == 0) {
         echo 'preencha seu email !';
-    } else if(strlen($_POST['senha']) == 0) { // Se a quantidade de caracteres da senha for igual a 0, vai pedir que preencha a senha
+    } else if(strlen($_POST['senha']) == 0) {
         echo 'Preencha sua senha!';
     } else {
         $email = $mysqli ->real_escape_string($_POST['email']);
         $senha = $mysqli ->real_escape_string($_POST['senha']);
 
-        $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'"; // realiza a consulta no banco de dados se estiver tudo conforme
-        $sql_query = $mysqli->query($sql_code) or die("Falha na execução do codigo SQL: " . $mysqli->error); // se nao estiver conforme apresenta um erro de consulta
+        $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
+        $sql_query = $mysqli->query($sql_code) or die("Falha na execução do codigo SQL: " . $mysqli->error);
 
-        $quantidade = $sql_query->num_rows; 
+        $quantidade = $sql_query->num_rows;
 
-        if($quantidade == 1) { // se os dados enviados pelo usuario estiverem no banco de dados, leve o usuario até a tela inicial ('index.php') e inicie uma sessão
+        if($quantidade == 1) {
 
             $usuario = $sql_query->fetch_assoc();
 
@@ -28,7 +28,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 
             header("Location: ../home/index.php");
 
-        } else{ // caso contrario, não permite a entrada.
+        } else{
             echo "Falha ao logar! Email ou senha incorretos";
         }
     }
