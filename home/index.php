@@ -96,7 +96,7 @@ include('../protect.php');
 
             <div class="down-boxes">
                 <div class="remedy-box">
-                    <h2><i>Área de remedíos</i></h2>
+                    <h2><i>Área de remédios</i></h2>
                     <h4><i>Seus remédios</i></h4>
                     <ul class="remedy-list">
                         <li>xarope de gauco herbarium 0,5ml as 12:00h</li>
@@ -122,6 +122,42 @@ include('../protect.php');
 
 
     </main> <!--Fim Conteudo Principal-->
+
+    <footer class="footer">
+        <div class="footer-boxes">
+
+            <div class="about-footer">
+                <h3>Sobre nós</h3>
+                <p>Somos estudantes do ensino medio <br> da escola Antonio Dantas, <br> cursamos o segundo ano do <br> curso tecnico de informatica</p>
+            
+            </div>
+
+            <div class="support-footer">
+                <h3>Suporte</h3>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Politica de Privacidade</li>
+                    <li>Ajuda</li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+
+            <div class="contatos-footer">
+                <h3>Contatos</h3>
+                <ul>
+                    <li>Instagram: tecnico_informatica0</li>
+                    <li>Gmail: tecnicoinformaticaad2023@gmail.com</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="credits">
+            <p> &copy; Criado por: 2 Ano Téc.Informática</p>
+        </div>
+    </footer>
     <script src="../script/script.js"></script>
 </body>
 </html>
