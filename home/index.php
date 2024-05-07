@@ -96,12 +96,14 @@ include('../protect.php');
 
             <div class="down-boxes">
                 <div class="remedy-box">
-                    <h2><i>Área de remédios</i></h2>
-                    <h4><i>Seus remédios</i></h4>
-                    <ul class="remedy-list">
-                        <li>xarope de gauco herbarium 0,5ml as 12:00h</li>
-                        <li>xarope de gauco herbarium 0,5ml as 12:00h</li>
-                    </ul>
+                    <a href="../remedios/remedios.html">
+                        <h2><i>Área de remédios</i></h2>
+                        <h4><i>Seus remédios</i></h4>
+                        <ul class="remedy-list">
+                            <li>xarope de gauco herbarium 0,5ml as 12:00h</li>
+                            <li>xarope de gauco herbarium 0,5ml as 12:00h</li>
+                        </ul>
+                    </a>
                 </div>
 
                 <div class="clinic-box">
