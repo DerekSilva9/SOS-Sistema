@@ -1,5 +1,5 @@
 <?php 
-include('protect.php');
+include('../protect.php');
 ?>
 
 <!DOCTYPE html>
@@ -9,6 +9,7 @@ include('protect.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOS-Home</title>
     <link rel="stylesheet" href="style/homestyle.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header"> <!--Header-->
@@ -19,13 +20,15 @@ include('protect.php');
         </div>
 
         <div class="collapsed-side-bar"> <!-- Side bar div-->
-            <!--Botões laterais-->
-            <div class="close-btn"> <!--Div do botão de fechar-->
+             <!--Botões laterais-->
+             <div class="close-btn"> <!--Div do botão de fechar-->
                 <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
             </div>
-            <a href="#">Sobre</a> <!--Botões de place holder-->
-            <a href="#">Serviços</a>
-            <a href="#">Contatos</a>
+            <span class="personal-area">Área pessoal</span>
+            <a href="#"><em>Configurações</em></a> <!--Botões de place holder-->
+            <a href="#"><em>Conta</em></a>
+            <a href="#"><em>Contato</em></a>
+            <a href="#"><em>Sobre</em></a>
             <a href="../login/logout.php">Logout</a>
         </div>
 
@@ -93,12 +96,14 @@ include('protect.php');
 
             <div class="down-boxes">
                 <div class="remedy-box">
-                    <h2><i>Área de remedíos</i></h2>
-                    <h4><i>Seus remédios</i></h4>
-                    <ul class="remedy-list">
-                        <li>xarope de gauco herbarium 0,5ml as 12:00h</li>
-                        <li>xarope de gauco herbarium 0,5ml as 12:00h</li>
-                    </ul>
+                    <a href="../remedios/remedios.html">
+                        <h2><i>Área de remédios</i></h2>
+                        <h4><i>Seus remédios</i></h4>
+                        <ul class="remedy-list">
+                            <li>xarope de gauco herbarium 0,5ml as 12:00h</li>
+                            <li>xarope de gauco herbarium 0,5ml as 12:00h</li>
+                        </ul>
+                    </a>
                 </div>
 
                 <div class="clinic-box">
@@ -119,6 +124,42 @@ include('protect.php');
 
 
     </main> <!--Fim Conteudo Principal-->
+
+    <footer class="footer">
+        <div class="footer-boxes">
+
+            <div class="about-footer">
+                <h3>Sobre nós</h3>
+                <p>Somos estudantes do ensino medio <br> da escola Antonio Dantas, <br> cursamos o segundo ano do <br> curso tecnico de informatica</p>
+            
+            </div>
+
+            <div class="support-footer">
+                <h3>Suporte</h3>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Politica de Privacidade</li>
+                    <li>Ajuda</li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+
+            <div class="contatos-footer">
+                <h3>Contatos</h3>
+                <ul>
+                    <li>Instagram: tecnico_informatica0</li>
+                    <li>Gmail: tecnicoinformaticaad2023@gmail.com</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="credits">
+            <p> &copy; Criado por: 2 Ano Téc.Informática</p>
+        </div>
+    </footer>
     <script src="../script/script.js"></script>
 </body>
 </html>

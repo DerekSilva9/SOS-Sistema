@@ -1,14 +1,14 @@
 <?php 
-include('conexao.php');
+include('../conexao.php');
 
-if(isset($_POST['email']) || isset($_POST['senha'])) {
-    if(strlen($_POST['email']) == 0) {
+if(isset($_GET['email']) || isset($_GET['senha'])) {
+    if(strlen($_GET['email']) == 0) {
         echo 'preencha seu email !';
-    } else if(strlen($_POST['senha']) == 0) {
+    } else if(strlen($_GET['senha']) == 0) {
         echo 'Preencha sua senha!';
     } else {
-        $email = $mysqli ->real_escape_string($_POST['email']);
-        $senha = $mysqli ->real_escape_string($_POST['senha']);
+        $email = $mysqli ->real_escape_string($_GET['email']);
+        $senha = $mysqli ->real_escape_string($_GET['senha']);
 
         $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
         $sql_query = $mysqli->query($sql_code) or die("Falha na execução do codigo SQL: " . $mysqli->error);
@@ -26,7 +26,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             $_SESSION['id'] = $usuario['id'];
             $_SESSION['nome'] = $usuario['nome'];
 
-            header("Location: index.php");
+            header("Location: ../home/index.php");
 
         } else{
             echo "Falha ao logar! Email ou senha incorretos";
@@ -43,6 +43,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="cadastre.html">
     <link rel="stylesheet" href="index.php">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <title>Login</title>
 </head> <!--Tela de login, quando a pessoa vai entrar no site-->
 <body>
@@ -52,7 +53,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         <h1>Faça seu Login!</h1>
     </div>
                                 
-        <form action="" method="POST">
+        <form action="" method="GET">
             <input name="email" type="email" placeholder="Gmail">
             <br><br>
             <input name="senha" type="password" placeholder="Senha">
